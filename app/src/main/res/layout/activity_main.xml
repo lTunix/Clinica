@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blogspot.estamoscercadelfututro.clinica.MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de Pacientes"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.34" />
+
+        <Button
+            android:id="@+id/Ingresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeScreenRegister"
+            android:text="Registrar Paciente"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Listar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeScreenList"
+            android:text="Listar Pacientes"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="createFile"
+            android:text="Guardar Listado en SDCARD"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Salir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exitScreen"
+            android:text="Salir de la app"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
